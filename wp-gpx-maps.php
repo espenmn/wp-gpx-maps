@@ -728,7 +728,7 @@ function handle_WP_GPX_Maps_Shortcodes($attr, $content='')
 			$dummy = ( defined('WP_SITEURL') ) ? WP_SITEURL : get_bloginfo('url');
 			$gpxurl = $dummy.$gpxurl;
 		}
-		$output.="<a href='$gpxurl' target='_new' download>".__("Download", "wp-gpx-maps")."</a>";
+		$output.="<a class='button btn' href='$gpxurl' target='_new' download>".__("Last ned GPX-data", "wp-gpx-maps")."</a>";
 	}
 
 	return $output;
